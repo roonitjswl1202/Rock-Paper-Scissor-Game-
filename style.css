@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.heading{
+    height: 4rem;
+    line-height: 4rem;
+    color: white;
+    background-color: #1a1817;
+    font-size: 2rem;
+}
+
+.sign-container{
+    height: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+   margin-top: 2.5rem;
+}
+
+
+.sign{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(95, 76, 52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign:hover{
+    border:  2px solid black;
+    cursor: pointer;
+}
+
+
+#logo1{
+    transform: rotate(105deg);
+    height: 120px;
+    width: 120px;
+}
+#rock{
+    background-color: rgb(182, 114, 228);
+}
+
+#logo2{
+    transform: rotate(110deg);
+    height: 100px;
+    width: 100px;
+}
+#paper{
+    background-color: rgb(98, 167, 204);
+}
+
+#logo3{
+    transform: rotate(-60deg);
+    height: 100px;
+    width: 100px;
+}
+#scissors{
+    background-color: rgb(215, 225, 107);
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    gap: 4.5rem;
+    font-size: 2rem;
+}
+
+#user-score , #comp-score{
+    font-size: 4rem;
+}
+
+#msg-container{
+    height: 1rem;
+    
+}
+
+#msg{
+   font-size: 2rem;
+   color: white;
+   background-color: #242827ef;
+   padding: 1rem;
+   border-radius: 1rem;
+   margin-top: 2.5rem;
+   display: inline-block;
+}
+
+@media (max-width:560px) {
+    .sign{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: rgb(95, 76, 52);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo1{
+        transform: rotate(105deg);
+        height: 100px;
+        width: 100px;
+    }
+
+    #logo2{
+        transform: rotate(110deg);
+        height: 80px;
+        width: 80px;
+    }
+
+    #logo3{
+        transform: rotate(-60deg);
+        height: 80px;
+        width: 80px;
+    }
+    
+
+    .score-board{
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width:456px) and (max-width:560px) {
+    .score-board{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+
+@media (max-width:455px) {
+    .msg-container{
+        margin-top: 1em;
+    }
+    #msg{
+     padding: 0.5rem;
+    }
+}
+@media (max-width:350px) {
+    .sign{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: rgb(95, 76, 52);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo1{
+        transform: rotate(105deg);
+        height: 80px;
+        width: 80px;
+    }
+
+    #logo2{
+        transform: rotate(110deg);
+        height: 60px;
+        width: 60px;
+    }
+
+    #logo3{
+        transform: rotate(-60deg);
+        height: 60px;
+        width: 60px;
+    }
+    
+    .score-board{
+        margin-top: 5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
